@@ -1,0 +1,19 @@
+Retrieval-Augmented Generation (RAG) is an architecture that combines information retrieval with large language models. Instead of relying only on the model’s internal knowledge, RAG retrieves relevant documents and provides them as context to improve answer accuracy.
+
+A vector database stores data in the form of embeddings, which are numerical representations of text. These embeddings allow semantic similarity search instead of keyword-based search.
+
+Qdrant is an open-source vector database designed for efficient similarity search. It supports cosine similarity and payload storage, making it suitable for building RAG systems.
+
+Embeddings are generated using models such as sentence-transformers. These models convert text into fixed-length numerical vectors that capture semantic meaning.
+
+FastAPI is a modern Python web framework for building APIs. It supports asynchronous programming and automatic API documentation using OpenAPI.
+
+Ollama is a tool that allows developers to run large language models locally. It exposes a REST API that applications can call to generate responses from models like Mistral or LLaMA.
+
+In a typical RAG pipeline, a user question is first converted into an embedding. The system then searches the vector database for similar documents.
+
+The retrieved documents are combined into a prompt and sent to the language model. The model generates an answer using only the provided context.
+
+Chunking is the process of splitting long documents into smaller sections before generating embeddings. This improves retrieval accuracy and makes context more precise.
+
+Cosine similarity is commonly used in vector search. It measures how similar two vectors are by calculating the angle between them.
